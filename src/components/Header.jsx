@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from './Navbar'
 const Header = () => {
   return (
-    <div className="bg-[url('../../public/images/Heropage.png')] bg-cover z-10 ">
+    <div className="bg-[url('../../images/Heropage.png')] bg-cover z-10 ">
         <Navbar />
         <div className='flex flex-col items-center pt-[calc(193px-32px)]  '>
         <img src="./images/Header-main.svg" alt="" className='max-w-[52%]' />
