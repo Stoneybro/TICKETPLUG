@@ -4,6 +4,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Refreshtoken from '../hooks/Refreshtoken'
 import Cardcontainer from '../components/Cardcontainer'
+import Subscribe from '../components/Subscribe'
 import { useAuth } from '../Context/Auth'
 const Home = () => {
   const {auth} =useAuth()
@@ -13,6 +14,7 @@ const Home = () => {
     <>
      <Header />
      <Cardcontainer />
+    <Subscribe />
      <Footer />
     </>
  

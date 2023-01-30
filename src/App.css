@@ -1,10 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  html {
-      font-family: Khula;
-  }
+
+@font-face {
+  font-family: 'Gilroy-Regular';
+  src: url('../public/fonts/gilroy/Gilroy-Regular.ttf');
+}
+@font-face {
+  font-family: 'Gilroy-bold';
+  src: url('../public/fonts/gilroy/Gilroy-Bold.ttf');
+}
+@font-face {
+  font-family: 'gilroy-medium';
+  src: url('../public/fonts/gilroy/Gilroy-Medium.ttf');
+}
+@font-face {
+  font-family: 'BebasNeue-Regular';
+  src: url('../public/fonts/gilroy/Bebas\ Neue\ Regular\ 400.ttf');
+}
+@font-face {
+  font-family:'BebasNeue-Bold' ;
+  src: url('../public/fonts/gilroy/Bebas\ Neue\ Bold\ 700.otf');
 }

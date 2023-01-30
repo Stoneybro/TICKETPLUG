@@ -2,43 +2,26 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='bg-primary'>
-    <div className=' flex px-28 py-20 text-white justify-between border-b-2 border-[#6B6E70]'>
-
-      <div className='flex flex-col gap-6'>
-        <div className='font-bold '>About us</div>
+    <div className='bg-black font-Gilroy text-sm'>
+    <div className=' flex px-28 pt-[4.5rem] pb-12 text-white items-start gap-36 '>
+    <img src="./images/ticket-logo.svg" alt="" className='w-32'  />
+      <div className='flex flex-col gap-3'>
+        <div>Help</div>
         <div>About</div>
-        <div>Merchandise</div>
-        <div>Our Outlets</div>
-        <div>Blog</div>
+        <div>Merch</div>
+        <div>Create Event</div>
       </div>
 
-      <div className='flex flex-col gap-6'>
-        <div className='font-bold '>Top Categories</div>
-        <div>Music events</div>
-        <div>Comedy events</div>
-        <div>Fashion events</div>
-        <div>Lifestyle events</div>
-      </div>
-
-      <div className='flex flex-col gap-6'>
-        <div className='font-bold '>Connect</div>
+      <div className='flex flex-col gap-3'>
+        <div>Instagram</div>
         <div>Facebook</div>
         <div>Twitter</div>
-        <div>Instagram</div>
-
+       
       </div>
 
-      <div className=' flex flex-col gap-6'>
-        <div className='font-bold'>Mobile app</div>
-        <img src="./images/Googleplay.png" alt="" />
-        <img src="./images/Applestore.png" alt="" />
-
+    
       </div>
-      </div>
-      <div className='text-white py-8 px-28 flex justify-between '><div > 2022 &#169; All Rights Reserved, TicketPlug</div>
-Refund and Cancellation Policy |
-Terms and Conditions</div>
+      <div className=' py-4 px-28 flex justify-center bg-accent font-Gilroybold '><div >&#169; 2023 TicketPlug. All Rights Reserved.</div></div>
     </div>
   )
 }

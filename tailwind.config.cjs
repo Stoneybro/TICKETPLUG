@@ -4,6 +4,13 @@ module.exports = {
   content: [  "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",],
   theme: {
+    fontFamily:{
+      Gilroy: ['Gilroy-Regular','cursive'],
+      Gilroybold:['Gilroy-Bold','cursive'],
+      Gilroymedium:['Gilroy-Medium','cursive'],
+      BebasNeue:['BebasNeue-Regular','cursive'],
+      BebasNeuebold:['BebasNeue-Bold','cursive']
+    },
     extend: {
       colors: {
         'primary': '#212529',
@@ -11,10 +18,7 @@ module.exports = {
         'secondary-text':'#545759'
       }
     },
-    fontFamily: {
-      'custom': ['Khula', 'sans-serif'],
-      
-  },
+
   },
   plugins: [],
 }
