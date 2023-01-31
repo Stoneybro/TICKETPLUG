@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from '../components/Card'
+import Navbar from '../components/Navbar'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Refreshtoken from '../hooks/Refreshtoken'
@@ -12,8 +13,9 @@ const Home = () => {
   
   return (
     <>
-     <Header />
-     <Cardcontainer />
+<Navbar />
+<Header />
+    <Cardcontainer />
     <Subscribe />
      <Footer />
     </>
