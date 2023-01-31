@@ -5,7 +5,7 @@ import Navbar from './Navbar'
 const PageLayout = ({children}) => {
   return (
     <>
-    <Navbar />
+    <Navbar bg='bg-black' />
     {children}
     <Footer />
     </>

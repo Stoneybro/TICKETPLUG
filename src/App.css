@@ -16,6 +16,10 @@
   src: url('../public/fonts/gilroy/Gilroy-Medium.ttf');
 }
 @font-face {
+  font-family: 'gilroy-semibold';
+  src: url('../public/fonts/gilroy/Gilroy-SemiBold.ttf');
+}
+@font-face {
   font-family: 'BebasNeue-Regular';
   src: url('../public/fonts/gilroy/BebasNeue-Regular.ttf');
 }

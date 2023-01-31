@@ -8,8 +8,10 @@ module.exports = {
       Gilroy: ['Gilroy-Regular','cursive'],
       Gilroybold:['Gilroy-Bold','cursive'],
       Gilroymedium:['Gilroy-Medium','cursive'],
+      Gilroysemibold:['Gilroy-SemiBold'],
       BebasNeue:['BebasNeue-Regular','cursive'],
-      BebasNeuebold:['BebasNeue-Bold','cursive']
+      BebasNeuebold:['BebasNeue-Bold','cursive'],
+
     },
     extend: {
       colors: {

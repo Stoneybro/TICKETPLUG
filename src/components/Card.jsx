@@ -9,7 +9,7 @@ const Card = () => {
             <div className='text-accent text-sm font-Gilroymedium'>Friday october 8pm</div>
             <div className='flex gap-2 font-Gilroymedium text-[0.9rem]'><img src="./images/location-icon.svg" alt="" />Landmark Center,Lagos.</div>
             <div className='flex  gap-2 font-Gilroybold text-[0.9rem]'><img src="./images/ticket-icon.svg" alt="" />Free</div>
-            <Link to='ticket' className='flex justify-center'><button className='text-accent   py-[0.4rem] px-7 mt-3 text-sm rounded-3xl border-accent border-[1.5px] font-Gilroybold'>Buy Ticket</button></Link>
+            <Link to='ticket' className='flex justify-center'><button className='text-accent hover:text-white hover:bg-accent  py-[0.4rem] px-7 mt-3 text-sm rounded-3xl border-accent border-[1.5px] font-Gilroybold'>Buy Ticket</button></Link>
         </div>
         </div>
   )

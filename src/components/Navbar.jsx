@@ -1,14 +1,14 @@
 import React from 'react'
 
 import {Link} from 'react-router-dom'
-const Navbar = () => {
+const Navbar = ({bg}) => {
   const [navScroll,setNavScroll]=React.useState('')
   window.onscroll=()=>{
     setNavScroll(window.scrollY)
   }
   
   return (
-    <nav className={`w-full fixed ${navScroll>0?'bg-black':'backdrop-blur-md'}  z-50 `}>
+    <nav className={`w-full fixed ${bg?bg:navScroll>0?'bg-black':'backdrop-blur-md'}  z-50 `}>
       <div className='flex bg-inherit text-white items-center max-w-[1040.64px] mx-auto py-5 gap-x-8 leading-none   top-0 '>
 
       
@@ -20,7 +20,7 @@ const Navbar = () => {
         <Link to='/about' className='hover:text-accent transition ease-in-out duration-300'>About</Link>
         <Link to='/register' className='hover:text-accent transition ease-in-out duration-300'>Mesh</Link>
         <Link to='/login' className='hover:text-accent transition ease-in-out duration-300 '>Create Event</Link>   
-        <button className='border border-[#FE4848] text-[#FE4848] py-[0.6rem] px-[1.85rem] rounded-3xl font-Gilroybold text-[0.875rem]  ml-[13px] hover:bg-accent hover:text-white transition-all duration-300 ease-in-out'><Link to='/events' >Login</Link></button>
+        <Link to='/events' ><button className='border border-[#FE4848] text-[#FE4848] py-[0.6rem] px-[1.85rem] rounded-3xl font-Gilroybold text-[0.875rem]  ml-[13px] hover:bg-accent hover:text-white transition-all duration-300 ease-in-out'>Login</button></Link>
         </div>
     </nav>
   )

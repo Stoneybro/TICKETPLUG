@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import axios from '../api/axios'
 import {useAuth} from '../Context/Auth'
 import {useLocation,useNavigate} from 'react-router-dom'
-
+import { Link } from 'react-router-dom'
 
 const Login = () => {
   const LOGIN_URL='/login/'
@@ -24,24 +24,26 @@ const Login = () => {
       navigate(from,{replace:true})
     } catch (error) {
       if (!error?.response) {
-        setError('NO SERVER RESPONSE')
+        setError('No server response')
       }else if(error?.response===400) {
-        setError('WRONG EMAIL OR PASSWORD')
+        setError('Wrong email or password')
       }else if(error?.response===401){
-        setError('UNAUTHORIZED')
+        setError('Unauthorized')
       }else{
-        setError('LOGIN FAILED')
+        setError('Login failed')
       }
     }
   }
 
   return (
-    <div className='flex justify-center items-center'>
+    <div className='flex justify-center items-center font-Gilroy text-black  h-screen'>
  
-      <form onSubmit={handleSubmit} className='flex flex-col w-80'>
-        <h1 className='text-2xl text-center'>Sign into your account</h1>
-        {error&& <div className="error">{error}</div>}
-        <label htmlFor="email">Email</label>
+      <form onSubmit={handleSubmit} className='flex flex-col w-96 gap-8 mt-24'>
+        <h1 className='text-4xl text-center font-BebasNeuebold mb-4'>LOGIN</h1>
+        <div className='flex flex-col gap-1 relative' >
+        {error&& <div className="bg-[#FFAEAE] text-[#921A15] flex px-4 gap-3 absolute rounded font-Gilroysemibold text-sm items-center py-2 w-full -top-12"><img src="./images/warning.svg" alt="" /> {error}</div>}
+
+        <label htmlFor="email" className=' font-Gilroysemibold'>Email</label>
             <input
             id='email'
             name='email'
@@ -50,9 +52,11 @@ const Login = () => {
             autoComplete='true'
             onChange={(e)=>setEmail(e.target.value)}
             value={email}
+            className='border border-[#E4E4E4] py-[0.7rem] rounded px-4'
             />
-
-            <label htmlFor="password">Password</label>
+            </div>
+            <div className='flex flex-col gap-1'>
+            <label htmlFor="password" className=' font-Gilroysemibold'>Password</label>
             <input
             id='password'
             name='password'
@@ -61,8 +65,12 @@ const Login = () => {
             onChange={(e)=>setPassword(e.target.value)}
             value={password}
             aria-describedby="password"
+            className='border border-[#E4E4E4] py-[0.7rem] rounded px-4 '
             />
-            <button type="submit">Sign in</button>
+            <div className='text-[#949494] text-sm font-Gilroymedium mt-2'>Forgot password</div>
+         </div>
+            <button type="submit" className='bg-black text-white rounded py-2'>Login</button>
+            <div className='text-center font-Gilroysemibold'>Don't have an account? <Link to='/register' ><span className='text-accent'>Sign up</span></Link></div>
       </form>
     
     </div>

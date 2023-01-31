@@ -3,9 +3,7 @@ import Navbar from './Navbar'
 const Header = () => {
   return (
 <>
-<div className="bg-[url('../../images/Heropage.png')] bg-cover z-10 font-Gilroy ">
-    
-
+<div className="bg-[url('../../images/Heropage.png')] bg-cover z-10 font-Gilroy mt-0 ">
         <div className='flex flex-col items-center pt-[calc(193px-32px)]  '>
         <img src="./images/Header-main.svg" alt="" className='max-w-[54%]' />
         <div className='text-center relative mt-32 inline w-[49%] z-10 mb-40'>
