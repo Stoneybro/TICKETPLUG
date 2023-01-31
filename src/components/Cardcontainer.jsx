@@ -3,7 +3,7 @@ import Card from './Card'
 
 const Cardcontainer = () => {
   return (
-    <div className=' px-[10%] py-[6.5rem] flex flex-col justify-center'>
+    <div className=' mx-auto max-w-[1010.64px] py-[6.5rem] flex flex-col justify-center'>
         <div>
             <div className='font-bold mb-4 text-2xl font-BebasNeue text-[2.1rem]'>Upcoming Events</div>
             <div className='flex justify-between font-Gilroy'>
