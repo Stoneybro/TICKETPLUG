@@ -6,7 +6,7 @@ const Subscribe = () => {
        <div className=' font-BebasNeuebold text-7xl'> Subscribe to get update <br/> on upcoming events</div>
        <div className='text-center relative '>
             <input type="text" placeholder='Enter your email' className=' w-4/5 px-8 py-4 outline-none rounded-[91px] border border-[#E4E4E4] font-Gilroymedium' />
-            <button className='absolute text-white bg-black rounded-[41px] py-2 px-6 top-2 right-[5.5rem] flex items-center font-Gilroybold  gap-2 '>Subscribe</button>
+            <button className='absolute text-white bg-black rounded-[41px] py-2 px-6 top-2 right-[5.3rem] flex items-center font-Gilroybold  gap-2 '>Subscribe</button>
         </div>
     </div>
   )
