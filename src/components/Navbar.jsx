@@ -8,7 +8,7 @@ const Navbar = ({bg}) => {
   }
   
   return (
-    <nav className={`w-full fixed ${bg?bg:navScroll>0?'bg-black':'backdrop-blur-md'}  z-50 `}>
+    <nav className={`w-full fixed ${bg?bg:navScroll>0?'bg-black':'backdrop-blur-md'}  z-50 font-Gilroy `}>
       <div className='flex bg-inherit text-white items-center max-w-[1040.64px] mx-auto py-5 gap-x-8 leading-none   top-0 '>
 
       
