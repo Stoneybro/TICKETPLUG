@@ -1,12 +1,10 @@
-import React from 'react'
+
 import { useAuth } from '../Context/Auth'
-import {useLocation} from 'react-router-dom'
 import { axiosPrivate } from '../api/axios'
 import Refreshtoken from './Refreshtoken'
 import { useEffect } from 'react'
 const useAxiosPrivate = () => {
     const {auth} =useAuth()
-    const Location=useLocation()
     const refresh=Refreshtoken()
 useEffect(()=>{
 
@@ -26,6 +24,7 @@ useEffect(()=>{
             if (error?.response?.status===401 && !prevRequest.sent) {
                 prevRequest.sent=true
                 let newaccesstoken=refresh()
+                console.log(newaccesstoken);
                 prevRequest.header['Authorization']=`Bearer ${newaccesstoken}`
             }
             return axiosPrivate(prevRequest)

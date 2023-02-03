@@ -111,7 +111,7 @@ const Register = () => {
          id='lastname'
          name='lastname'
          type="text"
-         required
+
          autoComplete='true'
          onChange={(e)=>setLname(e.target.value)}
          value={lname}

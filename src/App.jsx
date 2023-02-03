@@ -14,10 +14,12 @@ import Layout from './pages/Layout'
 import Help from './pages/Help'
 import About from './pages/About'
 import Requireauth from './pages/Requireauth'
+import Persistlogin from './components/persistlogin'
 function App() {
 
   return (
    <Routes>
+    <Route element={<Persistlogin />}>
      <Route path='/' element={<Home />} />
     <Route  element={<Layout />}>
     <Route path='/login' element={<Login />}/>
@@ -32,7 +34,7 @@ function App() {
     </Route>
    
     <Route path='/admin' element={<Admin />} />
-    
+    </Route>
 
     </Route>
    </Routes>
